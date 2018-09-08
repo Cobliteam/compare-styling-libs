@@ -1,0 +1,30 @@
+{
+  "name": "compare-styling-libs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cobliteam/compare-styling-libs.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cobliteam/compare-styling-libs/issues"
+  },
+  "homepage": "https://github.com/Cobliteam/compare-styling-libs#readme",
+  "dependencies": {
+    "@storybook/react": "4.0.0-alpha.3",
+    "@types/react": "^16.4.13",
+    "@types/react-dom": "^16.0.7",
+    "@types/storybook__react": "^3.0.9",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-core": "^6.26.3",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "typescript": "^3.0.3",
+    "webpack": "^4.17.2"
+  }
+}
