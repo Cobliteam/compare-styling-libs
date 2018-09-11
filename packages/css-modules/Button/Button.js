@@ -1,10 +1,18 @@
 import React from 'react';
 import styles from './Button.scss';
+import classNames from 'classnames/bind';
 
-const Button = () => (
-  <div className={styles.button}>
-    <button className={styles.button}> HI </button>
-  </div>
+const cx = classNames.bind(styles);
+
+export const HiButton = () => (
+  <button className={styles.button}> HI </button>
 );
 
-export default Button;
+export const OtherButton = ({ type, children }) => (
+  <button className={styles.button} type={type}> { children } </button>
+)
+
+//Other option
+export const Button = ({ type, children, className }) => (
+  <button className={cx('button', type, className)}> { children } </button>
+);

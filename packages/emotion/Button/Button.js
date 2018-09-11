@@ -1,12 +1,23 @@
 import React from 'react';
-import { css } from 'emotion';
 
-import { button } from './style.js'
+import { Button as BaseButton, otherButton } from './style.js'
 
-const Button = () => (
-  <button
-    className={button}
-  > HI </button>
+const Button = ({ type, children, className}) => (
+  <BaseButton type={type} className={className}>
+    {children}
+  </BaseButton>
 );
+
+// Does not work
+// const Button = (props) => {
+//   return(
+//     <button
+//       onClick={() => alert('Hi')}
+//       className={otherButton(props)}
+//     >
+//       {props.children}
+//     </button>
+//   )
+// }
 
 export default Button;

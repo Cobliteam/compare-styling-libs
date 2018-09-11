@@ -1,10 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
+import { Button as BaseButton } from './style.js'
 
-import { Button } from './style.js'
+export const HiButton = () => (
+  <BaseButton> HI </BaseButton>
+);
 
-const HiButton = () => (
-  <Button> HI </Button>
+export const Button = ({ type, children, className }) => (
+  <BaseButton type={type} className={className}>{children}</BaseButton>
 );
 
 export default HiButton;
